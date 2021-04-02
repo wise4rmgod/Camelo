@@ -9,6 +9,14 @@
         <dist:delivery>
             <dist:install-time />
         </dist:delivery>
+
         <dist:fusing dist:include="true" />
     </dist:module>
+
+    <application>
+        <activity
+            android:name=".DashboardMainActivity"
+            android:label="@string/title_activity_dashboard_main"></activity>
+    </application>
+
 </manifest>

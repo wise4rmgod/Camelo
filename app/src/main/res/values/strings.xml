@@ -5,4 +5,5 @@
     <string name="title_notifications">Notifications</string>
     <string name="title_dashboard_dynamicfeature">Dashboard</string>
     <string name="title_comment_dynamicfeature">Comment</string>
+    <string name="title_activity_dashboard_main">MainActivity</string>
 </resources>
