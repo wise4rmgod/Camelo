@@ -1,4 +1,4 @@
-package com.dev.camelo.ui.notifications
+package com.dev.camelo.ui.forgotpassword
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

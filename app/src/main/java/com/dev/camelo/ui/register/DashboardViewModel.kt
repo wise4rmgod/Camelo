@@ -1,4 +1,4 @@
-package com.dev.camelo.ui.dashboard
+package com.dev.camelo.ui.register
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

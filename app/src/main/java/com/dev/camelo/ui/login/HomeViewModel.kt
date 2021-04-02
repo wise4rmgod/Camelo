@@ -1,4 +1,4 @@
-package com.dev.camelo.ui.home
+package com.dev.camelo.ui.login
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
