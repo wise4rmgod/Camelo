@@ -1,2 +1,4 @@
+include ':Comment_dynamicfeature'
+include ':Dashboard_dynamicfeature'
 include ':app'
 rootProject.name = "Camelo"
