@@ -9,17 +9,27 @@
         android:id="@+id/navigation_home"
         android:name="com.dev.camelo.ui.login.HomeFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_navigation_home_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_dashboard"
         android:name="com.dev.camelo.ui.register.DashboardFragment"
         android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_register" />
 
     <fragment
         android:id="@+id/navigation_notifications"
         android:name="com.dev.camelo.ui.forgotpassword.NotificationsFragment"
         android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_forgotpassword" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.dev.dashboard_dynamicfeature.ui.profile.ProfileFragment"
+        app:moduleName="Camelo.Dashboard_dynamicfeature"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
 </navigation>
