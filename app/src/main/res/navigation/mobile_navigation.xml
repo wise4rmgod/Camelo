@@ -7,23 +7,26 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.dev.camelo.ui.login.HomeFragment"
+        android:name="com.dev.camelo.ui.login.LoginFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_login" >
         <action
             android:id="@+id/action_navigation_home_to_profileFragment"
             app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_homeFragment"
+            app:destination="@id/homeFragment" />
     </fragment>
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="com.dev.camelo.ui.register.DashboardFragment"
+        android:name="com.dev.camelo.ui.register.RegisterFragment"
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_register" />
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.dev.camelo.ui.forgotpassword.NotificationsFragment"
+        android:name="com.dev.camelo.ui.forgotpassword.ForgotPasswordFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_forgotpassword" />
     <fragment
@@ -32,4 +35,10 @@
         app:moduleName="Camelo.Dashboard_dynamicfeature"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.dev.dashboard_dynamicfeature.ui.home.HomeFragment"
+        app:moduleName="Camelo.Dashboard_dynamicfeature"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
 </navigation>

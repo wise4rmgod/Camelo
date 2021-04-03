@@ -12,9 +12,8 @@ import androidx.navigation.fragment.findNavController
 import com.dev.camelo.R
 import com.dev.camelo.databinding.FragmentLoginBinding
 
-class HomeFragment : Fragment() {
+class LoginFragment : Fragment() {
 
-    private lateinit var homeViewModel: HomeViewModel
     private lateinit var binding: FragmentLoginBinding
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -23,10 +22,9 @@ class HomeFragment : Fragment() {
     ): View? {
         binding = FragmentLoginBinding.inflate(inflater, container, false)
         val view = binding.root
-        homeViewModel =
-            ViewModelProvider(this).get(HomeViewModel::class.java)
+
         binding.loginbtn.setOnClickListener {
-            findNavController().navigate(R.id.action_navigation_home_to_profileFragment)
+            findNavController().navigate(R.id.action_navigation_home_to_homeFragment)
         }
 
         return view
