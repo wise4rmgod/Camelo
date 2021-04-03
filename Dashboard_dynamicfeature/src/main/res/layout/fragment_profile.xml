@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.profile.ProfileFragment">
+
+    <ImageView
+        android:id="@+id/profilepix"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/pic"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/imagecard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <ImageView
+            android:id="@+id/filepix"
+            android:layout_width="91.97dp"
+            android:layout_height="91.97dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/pic" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/profile_fullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Maliggj ajax"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/imagecard" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/profile_fullname" />
+
+
+    <TextView
+        android:id="@+id/post_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="10dp"
+        android:text="1.1111"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider" />
+
+    <TextView
+        android:id="@+id/post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:text="posts"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/post_value" />
+
+    <TextView
+        android:id="@+id/followers_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="10dp"
+        android:text="9.9991"
+        app:layout_constraintStart_toStartOf="@id/post_value"
+        app:layout_constraintTop_toBottomOf="@id/divider" />
+
+    <TextView
+        android:id="@+id/followers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:text="followers"
+        app:layout_constraintStart_toStartOf="@id/post_value"
+        app:layout_constraintTop_toBottomOf="@id/followers_value" />
+
+    <TextView
+        android:id="@+id/following_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="10dp"
+        android:text="9.9991"
+        app:layout_constraintStart_toStartOf="@id/followers_value"
+        app:layout_constraintTop_toBottomOf="@id/divider" />
+
+    <TextView
+        android:id="@+id/following"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:text="followers"
+        app:layout_constraintStart_toStartOf="@id/followers_value"
+        app:layout_constraintTop_toBottomOf="@id/following_value" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/post" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/followbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="FOLLOW"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider2" />
+
+    <TextView
+        android:id="@+id/phototext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:text="photos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/followbtn" />
+
+    <HorizontalScrollView
+        android:id="@+id/horinzontalscrollv"
+        app:layout_constraintTop_toBottomOf="@id/phototext"
+        android:scrollbars="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="82dp"
+            android:layout_height="84dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/pic" />
+        <ImageView
+            android:layout_width="82dp"
+            android:layout_height="84dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/pic" />
+        <ImageView
+            android:layout_width="82dp"
+            android:layout_height="84dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/pic" />
+        <ImageView
+            android:layout_width="82dp"
+            android:layout_height="84dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/pic" />
+        <ImageView
+            android:layout_width="82dp"
+            android:layout_height="84dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/pic" />
+        <ImageView
+            android:layout_width="82dp"
+            android:layout_height="84dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/pic" />
+        <ImageView
+            android:layout_width="82dp"
+            android:layout_height="84dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/pic" />
+    </HorizontalScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
