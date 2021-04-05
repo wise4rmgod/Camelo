@@ -52,6 +52,7 @@
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="10dp"
                 android:text="Louise French"
+                android:textColor="@color/black"
                 android:textSize="13sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toEndOf="@id/comment_imagecard"
