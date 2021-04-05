@@ -10,7 +10,7 @@
         android:id="@+id/profilepix"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:scaleType="fitCenter"
+        android:scaleType="centerCrop"
         android:src="@drawable/pic"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -22,14 +22,13 @@
         app:cardCornerRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        >
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/filepix"
             android:layout_width="91.97dp"
             android:layout_height="91.97dp"
-            android:scaleType="fitCenter"
+            android:scaleType="centerCrop"
             android:src="@drawable/pic" />
     </androidx.cardview.widget.CardView>
 
@@ -137,7 +136,7 @@
         android:id="@+id/phototext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="10dp"
         android:text="photos"
         app:layout_constraintStart_toStartOf="parent"
@@ -145,45 +144,54 @@
 
     <HorizontalScrollView
         android:id="@+id/horinzontalscrollv"
-        app:layout_constraintTop_toBottomOf="@id/phototext"
-        android:scrollbars="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <ImageView
-            android:layout_width="82dp"
-            android:layout_height="84dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/pic" />
-        <ImageView
-            android:layout_width="82dp"
-            android:layout_height="84dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/pic" />
-        <ImageView
-            android:layout_width="82dp"
-            android:layout_height="84dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/pic" />
-        <ImageView
-            android:layout_width="82dp"
-            android:layout_height="84dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/pic" />
-        <ImageView
-            android:layout_width="82dp"
-            android:layout_height="84dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/pic" />
-        <ImageView
-            android:layout_width="82dp"
-            android:layout_height="84dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/pic" />
-        <ImageView
-            android:layout_width="82dp"
-            android:layout_height="84dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/pic" />
+        android:layout_height="wrap_content"
+        android:scrollbars="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/phototext">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:scrollbars="none">
+
+            <ImageView
+                android:layout_width="82dp"
+                android:layout_height="84dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pic" />
+
+            <ImageView
+                android:layout_width="82dp"
+                android:layout_height="84dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pic" />
+
+            <ImageView
+                android:layout_width="82dp"
+                android:layout_height="84dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pic" />
+
+            <ImageView
+                android:layout_width="82dp"
+                android:layout_height="84dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pic" />
+
+            <ImageView
+                android:layout_width="82dp"
+                android:layout_height="84dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pic" />
+
+            <ImageView
+                android:layout_width="82dp"
+                android:layout_height="84dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pic" />
+        </LinearLayout>
+
     </HorizontalScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

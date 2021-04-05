@@ -41,4 +41,9 @@
         app:moduleName="Camelo.Dashboard_dynamicfeature"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/commentFragment"
+        android:name="com.dev.comment_dynamicfeature.ui.CommentFragment"
+        app:moduleName="Camelo.Comment_dynamicfeature"
+        android:label="CommentFragment" />
 </navigation>
