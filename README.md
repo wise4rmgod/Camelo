@@ -1,5 +1,5 @@
 # Camelo
-A Social media sample app
+A Social media sample app that is built using Playdelivery 
 
 # Tools & Architectures
 - Mvvm
