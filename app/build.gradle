@@ -10,6 +10,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
+
         applicationId "com.dev.camelo"
         minSdkVersion 21
         targetSdkVersion 30
